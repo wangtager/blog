@@ -20,7 +20,10 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/wangtager/blog.git master:gh-pages
+# git push -f https://github.com/wangtager/blog.git master:gh-pages
+git push -f https://${access_token}@github.com/wangtager/blog.git master:gh-pages
+
+
 # git remote add origin https://github.com/wangtager/blog.git
 # git push origin --delete gh-pages
 # git push origin master:gh-pages
