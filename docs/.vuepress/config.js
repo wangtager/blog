@@ -25,8 +25,8 @@ module.exports = {
         text: '前端栈', 
         items: [
           { text: 'Javascript', link: '/javascript/debounce' },
-          { text: '前端性能优化', link: '/performance' },
-          { text: 'NodeJs', link: '/nodejs' }
+          { text: '前端性能优化', link: '/performance/' },
+          { text: 'NodeJs', link: '/nodejs/' }
         ]
      },
       { text: 'External', link: 'https://google.com' },
@@ -52,6 +52,12 @@ module.exports = {
         title: '前端性能优化',
         children: [
           '/performance/'
+        ]
+      },
+      {
+        title: 'NodeJs',
+        children: [
+          '/nodejs/'
         ]
       }
   ],
