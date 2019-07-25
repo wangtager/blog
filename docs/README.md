@@ -1,7 +1,5 @@
-# VuePress666!
-
-<style lang="stylus">
-  h1
-    color red
-    font-size 24px
-</style>
+---
+home: true
+heroImage: /home-page.jpg
+footer: MIT Licensed | Copyright © 2019 WangTao
+---
