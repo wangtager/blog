@@ -10,7 +10,7 @@ Http 缓存机制作为 ```web``` 性能优化的重要手段，对于从事 ```
     将数据存储至缓存数据库中。
 
 <div style="text-align:center">
-  <img :src="$withBase(/img/javascript/cache.jpg)" alt="GitHub" title="GitHub0,Social Coding" width="auto" height="auto" />
+  <img :src="$withBase('/img/javascript/cache.jpg')" alt="GitHub" title="GitHub0,Social Coding" width="auto" height="auto" />
 </div>
 
 HTTP缓存有多种规则，根据是否需要重新向服务器发起请求来分类，我将其分为两大类(**强制缓存**，**对比缓存**)
