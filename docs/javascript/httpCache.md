@@ -38,12 +38,12 @@ HTTP缓存有多种规则，根据是否需要重新向服务器发起请求来�
 
 在```Cache-Control``` 中，这些值可以自由组合，多个值如果冲突时，也是有优先级的，而no-store优先级最高。如下图：
 <div style="text-align:center">
-  <img src="/img/javascript/cache3.png" alt="GitHub" title="GitHub2,Social Coding" width="auto" height="auto" />
+  <img :src="$withBase('/img/javascript/cache3.png')" alt="GitHub" title="GitHub2,Social Coding" width="auto" height="auto" />
 </div>
 
 **强制缓存的缓存机制**，如下图：
 <div style="text-align:center">
-  <img src="/img/javascript/cache1.png" alt="GitHub" title="GitHub1,Social Coding" width="auto" height="auto" />
+  <img :src="$withBase('/img/javascript/cache1.png')" alt="GitHub" title="GitHub1,Social Coding" width="auto" height="auto" />
 </div>
 
 ### 对比缓存
@@ -65,7 +65,7 @@ HTTP缓存有多种规则，根据是否需要重新向服务器发起请求来�
 
 **对比缓存的缓存机制**，如下图：
 <div style="text-align:center">
-  <img src="/img/javascript/cache2.png" alt="GitHub" title="GitHub2,Social Coding" width="auto" height="auto" />
+  <img :src="$withBase('/img/javascript/cache2.png')" alt="GitHub" title="GitHub2,Social Coding" width="auto" height="auto" />
 </div>
 
 ### http缓存优先级
