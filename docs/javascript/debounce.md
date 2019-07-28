@@ -37,7 +37,7 @@ function debounce(fn,delay){
     }
 }
 // 原始函数
-let handlerScroll = ()=> {
+let handlerScroll = function() {
     var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 　　console.log('滚动条当前位置：' + scrollTop);
 }
@@ -49,7 +49,7 @@ window.addEventListener('scroll', debounce(handlerScroll, 1000))
 
 实际开发中需要防抖处理的场景还是非常多的，如`resize事件`、`scroll事件`、`input事件`、`拖拽事件`等。除了这些,还有很多情况需要我们结合实际开发处理。 
 ## 节流(throttle)
-顾名思义就是每过n秒仅执行一次回调函数。如单位时间内多次函数，也只有一次生效。
+顾名思义就是每过n秒仅执行一次回调函数。如单位时间内多次触发函数，也只有一次生效。
 
 ```
 // 节流函数
@@ -67,7 +67,7 @@ function throttle(fn, delay) {
     }
 }
 // 原始函数
-let scrollEvent = ()=> {
+let scrollEvent = function() {
 　　console.log('当前时间戳：' + new Date().getTime());
 }
 // 滚动事件
