@@ -25,18 +25,12 @@ module.exports = {
         text: '前端栈', 
         items: [
           { text: 'Javascript', link: '/javascript/debounce' },
-          { text: '前端性能优化', link: '/performance/' },
-          { text: 'NodeJs', link: '/nodejs/' }
+          { text: 'NodeJs', link: '/nodejs/' },
+          { text: 'Graph', link: '/graph/' },
+          { text: '前端性能优化', link: '/performance/' }
         ]
      },
-      { text: 'External', link: 'https://google.com' },
-      {
-        text: 'Languages',
-        items: [
-          { text: 'Chinese', link: '/language/chinese' },
-          { text: 'Japanese', link: '/language/japanese' }
-        ]
-      }
+      { text: 'External', link: 'https://google.com' }
     ],
     displayAllHeaders: true,
     sidebar: [
@@ -49,15 +43,21 @@ module.exports = {
         ]
       },
       {
-        title: '前端性能优化',
-        children: [
-          '/performance/'
-        ]
-      },
-      {
         title: 'NodeJs',
         children: [
           '/nodejs/'
+        ]
+      },
+      {
+        title: '图形动画',
+        children: [
+          '/graph/svgCircleProgress'
+        ]
+      },
+      {
+        title: '前端性能优化',
+        children: [
+          '/performance/'
         ]
       }
   ],
