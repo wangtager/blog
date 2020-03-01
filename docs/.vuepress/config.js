@@ -39,7 +39,8 @@ module.exports = {
         children: [
           '/javascript/debounce',  /* /foo/one.html */
           '/javascript/httpCache',   /* /foo/two.html */
-          '/javascript/constructorFunction'
+          '/javascript/constructorFunction',
+          '/javascript/decorator'
         ]
       },
       {
@@ -57,7 +58,7 @@ module.exports = {
       {
         title: '前端性能优化',
         children: [
-          '/performance/'
+          '/performance/render'
         ]
       }
   ],
