@@ -2,7 +2,7 @@ module.exports = {
   base: '/blog/',
   title: 'Tager Blog',
   content: 'HTML, CSS, XML, XHTML, JavaScript, Vue',
-  description: '与其临渊羡鱼，不如退而结网', 
+  description: '与其临渊羡鱼，不如退而结网',
   markdown: {
     // 显示代码行号
     lineNumbers: true
@@ -21,8 +21,8 @@ module.exports = {
     lastUpdated: 'Last Updated' ,
     navbar: true,
     nav: [
-      { 
-        text: '前端栈', 
+      {
+        text: '前端栈',
         items: [
           { text: 'Javascript', link: '/javascript/debounce' },
           { text: 'NodeJs', link: '/nodejs/' },
@@ -34,6 +34,7 @@ module.exports = {
     ],
     displayAllHeaders: true,
     sidebar: [
+      ['/sublime', 'Sublime 插件和配置文件的版本控制'],
       {
         title: 'Javascript',
         children: [
@@ -63,6 +64,6 @@ module.exports = {
         ]
       }
   ],
-    sidebarDepth: 2
+    sidebarDepth: 1
   }
 }
