@@ -52,7 +52,8 @@ module.exports = {
       {
         title: '图形动画',
         children: [
-          '/graph/svgCircleProgress'
+          '/graph/svgCircleProgress',
+          '/graph/animation'
         ]
       },
       {
