@@ -26,8 +26,8 @@ module.exports = {
         items: [
           { text: 'Javascript', link: '/javascript/debounce' },
           { text: 'NodeJs', link: '/nodejs/' },
-          { text: 'Graph', link: '/graph/' },
-          { text: '前端性能优化', link: '/performance/' }
+          { text: 'Graph', link: '/graph/svgCircleProgress' },
+          { text: '前端性能优化', link: '/performance/render' }
         ]
      },
       { text: 'External', link: 'https://google.com' }
