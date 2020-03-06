@@ -52,6 +52,8 @@ Control.sublime-settings 文件](https://github.com/wangtager/sublime-config/blo
 功能：快捷输入文件名(按Tab键或鼠标点击选中)
 12. Nodejs
 功能：node代码提示
+13. Open Folder
+功能：在任何文件任何位置右击快速打开所在的文件夹
 
 ### 问题处理
 > 1. 输入pci时 提示There are no packages available for installation，导致无法安装任何插件？
@@ -82,6 +84,30 @@ Control.sublime-settings 文件](https://github.com/wangtager/sublime-config/blo
 
 这个问题全网都没有找到答案，这种情况只有摸索才能出真知
 
+3. SublimeCodeIntel插件安装过程中出现的问题以及解决方案
+原因：[参考](https://blog.csdn.net/BuluGuy/article/details/100056412)
+
+处理: [参考](https://blog.csdn.net/nalaluky/article/details/80864386)
+
+>注意：安装SublimeCodeIntel前需要安装CodeIntel
+
+安装方法查看官网[说明 CodeIntel Installation](https://packagecontrol.io/packages/SublimeCodeIntel)[知乎pip](https://zhuanlan.zhihu.com/p/38603105)[python最新版下载地址](https://www.python.org/downloads/release/python-382/)
+
+[python安装失败原因分析](https://www.jianshu.com/p/bc1263f12c4f)（未指定错误0x80072efd）
+
+由于网络问题，python和pip很难下载，可直接[下载](https://pan.baidu.com/s/1ju8YvUBYSgzSjD0ikDKfYw)提取码：ke48
+```
+安装成功测试`python -m pip --version`
+运行安装CodeIntel：
+pip3 install --upgrade --pre CodeIntel 
+
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+运行ython -m pip install --upgrade pip , 消除错误
+```
+
+
 ### 快速导航
 [受欢迎的特性](http://www.sublimetext.cn/)[英文版](https://www.sublimetext.com/support)
 
@@ -89,6 +115,11 @@ Control.sublime-settings 文件](https://github.com/wangtager/sublime-config/blo
 在[Popular](https://packagecontrol.io/)中总有你喜欢的存在
 
 ### 快捷键（continue add）
+
+```
+alt + f3 选中同一个word(把光标放到你要选中变量的右边或者左边，记住不要选中这个变量)
+ctrl+ D 连续使用，增量选中同一个word
+```
 
 
 
