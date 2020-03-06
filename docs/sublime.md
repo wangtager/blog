@@ -66,11 +66,27 @@ Control.sublime-settings 文件](https://github.com/wangtager/sublime-config/blo
     "https://wangtager.github.io/sublime-config/channel_v3.json"
   ]
   ```
+> 2. sublime 怎样按elint自动格式化文件？
+```
+选择 工具-编译系统-新建编译系统
+输入：
+{
+  // "shell_cmd": "eslint --fix $file"
+  "shell_cmd": "npx eslint --fix --ext js,vue $file"
+}
+保存并命名
+选择 工具-编译系统-选择自己刚命名的模板
+文件有修改后，ctrl+b 即可按elint自动格式化当前文件
+```
+可配合 [SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-eslint) 插件，在文件中高亮eslint的错误
+
 ### 快速导航
 [受欢迎的特性](http://www.sublimetext.cn/)[英文版](https://www.sublimetext.com/support)
 
-## 插件统计
+### 插件统计
 在[Popular](https://packagecontrol.io/)中总有你喜欢的存在
+
+### 快捷键（continue add）
 
 
 
