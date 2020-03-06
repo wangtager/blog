@@ -80,6 +80,8 @@ Control.sublime-settings 文件](https://github.com/wangtager/sublime-config/blo
 ```
 可配合 [SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-eslint) 插件，在文件中高亮eslint的错误
 
+这个问题全网都没有找到答案，这种情况只有摸索才能出真知
+
 ### 快速导航
 [受欢迎的特性](http://www.sublimetext.cn/)[英文版](https://www.sublimetext.com/support)
 
