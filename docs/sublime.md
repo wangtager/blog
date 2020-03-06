@@ -104,7 +104,7 @@ pip3 install --upgrade --pre CodeIntel
 WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
 You should consider upgrading via the 'python -m pip install --upgrade pip' command.
 
-运行ython -m pip install --upgrade pip , 消除错误
+运行python -m pip install --upgrade pip , 消除错误
 ```
 
 
