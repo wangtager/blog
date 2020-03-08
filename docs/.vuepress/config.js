@@ -27,14 +27,15 @@ module.exports = {
           { text: 'Javascript', link: '/javascript/debounce' },
           { text: 'NodeJs', link: '/nodejs/' },
           { text: 'Graph', link: '/graph/svgCircleProgress' },
-          { text: '前端性能优化', link: '/performance/render' }
+          { text: '前端性能优化', link: '/performance/render' },
+          { text: '高效编辑器', link: '/sublime/sublime' },
         ]
      },
       { text: 'External', link: 'https://google.com' }
     ],
     displayAllHeaders: true,
     sidebar: [
-      ['/sublime', 'Sublime 插件和配置文件的版本控制'],
+      // ['/sublime', 'Sublime 插件和配置文件的版本控制'],
       {
         title: 'Javascript',
         children: [
@@ -61,6 +62,13 @@ module.exports = {
         title: '前端性能优化',
         children: [
           '/performance/render'
+        ]
+      },
+      {
+        title: '高效编辑器',
+        children: [
+          '/sublime/sublime',
+          '/sublime/keyBinding',
         ]
       }
   ],

@@ -119,6 +119,8 @@ You should consider upgrading via the 'python -m pip install --upgrade pip' comm
 ```
 alt + f3 选中同一个word(把光标放到你要选中变量的右边或者左边，记住不要选中这个变量)
 ctrl+ D 连续使用，增量选中同一个word
+
+tager
 ```
 
 
