@@ -1,4 +1,21 @@
 module.exports = {
+  plugins: [
+    [
+      '@vssue/vssue',
+      {
+        // 设置 `platform` 而不是 `api`
+        platform: 'github',
+
+        // 其他的 Vssue 配置
+        owner: 'wangtager',
+        repo: 'blog',
+        clientId: 'b3e5558b17c4a52f8d98',
+        clientSecret: '73c0830a0dea90562d950d06846e87bd66393efa'
+      }
+    ],
+    '@vssue/api-github-v3',
+    '@vuepress/back-to-top'
+  ],
   base: '/blog/',
   title: 'Tager Blog',
   content: 'HTML, CSS, XML, XHTML, JavaScript, Vue',

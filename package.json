@@ -12,11 +12,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "webpack": "^4.36.1"
   },
   "dependencies": {
+    "@vssue/api-github-v3": "^1.4.0",
+    "@vssue/vuepress-plugin-vssue": "^1.4.2",
     "vuepress": "^1.0.2"
   }
 }
