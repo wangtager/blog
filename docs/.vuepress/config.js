@@ -32,8 +32,8 @@ module.exports = {
       // clientId: 'b3e5558b17c4a52f8d98',
       // clientSecret: '73c0830a0dea90562d950d06846e87bd66393efa'
       // 本地
-      clientId: 'b38f074d17c53f18f594',
-      clientSecret: 'dca0fab74cf2d0898ba7d72d3cc5f536bbedc3c6',
+      clientId: '3889dbde4185679613eb',
+      clientSecret: '1ce047acfec4fc776f73796988d198d3fb4a001c',
       proxy: url => {
         console.log('url=============', url)
         return `https://api.github.com?target=${url}`
