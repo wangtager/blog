@@ -32,9 +32,9 @@ module.exports = {
       // clientId: 'b3e5558b17c4a52f8d98',
       // clientSecret: '73c0830a0dea90562d950d06846e87bd66393efa'
       // 本地
-      clientId: '3889dbde4185679613eb',
-      clientSecret: '1ce047acfec4fc776f73796988d198d3fb4a001c',
-      // proxy: url => `https://api.github.com?target=${url}`
+      clientId: '2e5c7372cce3eff6fdc7',
+      clientSecret: '743792ad67a4be3e975cfcfc201c60a04019ab95',
+      proxy: url => `https://api.github.com?target=${url}`
       // proxy: url => {
       //   console.log('url=============', url)
       //   return `https://api.github.com?target=${url}`
