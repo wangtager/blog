@@ -34,10 +34,10 @@ module.exports = {
       // 本地
       clientId: 'b38f074d17c53f18f594',
       clientSecret: 'dca0fab74cf2d0898ba7d72d3cc5f536bbedc3c6',
-      // proxy: url => {
-      //   console.log('url=============', url)
-      //   return `https://api.github.com?target=${url}`
-      // }
+      proxy: url => {
+        console.log('url=============', url)
+        return `https://api.github.com?target=${url}`
+      }
     }],
     '@vuepress/back-to-top'
   ],
