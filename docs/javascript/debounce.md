@@ -85,5 +85,5 @@ window.addEventListener('scroll', throttle(scrollEvent, 1000));
 
 防抖和节流能有效减少浏览器引擎的损耗，防止出现页面堵塞卡顿现象，作为大前端开发人员是应该熟练掌握的技能。
 
-<Vssue title="Vssue Demo" />
+<Vssue title="vssue-blog" />
 

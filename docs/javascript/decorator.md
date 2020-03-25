@@ -150,3 +150,5 @@ function log(value) {
 vue项目中使用装饰器，其官方提供的组件[装饰器](https://github.com/vuejs/vue-class-component)
 
 core-decorators.js 提供了一些[常用的装饰器方法](https://github.com/jayphelps/core-decorators)
+
+<Vssue title="vssue-blog" />

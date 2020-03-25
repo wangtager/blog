@@ -9,7 +9,6 @@ module.exports = {
     //     locale: 'zh',
     //     // 设置要使用的平台 api
     //     // api: GithubV3,
-    //     // baseURL: 'https://github.com',
     //     // 设置 `platform` 而不是 `api`
     //     platform: 'github',
 
@@ -29,8 +28,11 @@ module.exports = {
       platform: 'github',
       owner: 'wangtager',
       repo: 'blog',
-      clientId:'b3e5558b17c4a52f8d98',
-      clientSecret:'73c0830a0dea90562d950d06846e87bd66393efa',
+      clientId: 'b3e5558b17c4a52f8d98',
+      clientSecret: '73c0830a0dea90562d950d06846e87bd66393efa'
+      // 本地
+      // clientId: 'b38f074d17c53f18f594',
+      // clientSecret: 'dca0fab74cf2d0898ba7d72d3cc5f536bbedc3c6'
     }],
     '@vuepress/back-to-top'
   ],

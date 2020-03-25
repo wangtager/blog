@@ -74,3 +74,6 @@ HTTP缓存有多种规则，根据是否需要重新向服务器发起请求来�
 强制缓存: cache-control (http1.1) > expires(http1.0)、
 对比缓存: etag(传送If-None-Match) > last-modified (传送If-Modified-Since)
 ```
+
+
+<Vssue title="vssue-blog" />
