@@ -29,8 +29,8 @@ module.exports = {
       platform: 'github',
       owner: 'wangtager',
       repo: 'blog',
-      clientId:'3e010a9999886c6c6e1c',
-      clientSecret:'9a64800d2be2cab9887bda67177cc2beebf1681c',
+      clientId:'b3e5558b17c4a52f8d98',
+      clientSecret:'73c0830a0dea90562d950d06846e87bd66393efa',
     }],
     '@vuepress/back-to-top'
   ],
