@@ -24,6 +24,7 @@ module.exports = {
     //   }
     // ],
     ['@vssue/vuepress-plugin-vssue', {
+      // Accept: application/vnd.github.v3+json,
       locale: 'zh',
       platform: 'github',
       owner: 'wangtager',
@@ -32,7 +33,11 @@ module.exports = {
       // clientSecret: '73c0830a0dea90562d950d06846e87bd66393efa'
       // 本地
       clientId: 'b38f074d17c53f18f594',
-      clientSecret: 'dca0fab74cf2d0898ba7d72d3cc5f536bbedc3c6'
+      clientSecret: 'dca0fab74cf2d0898ba7d72d3cc5f536bbedc3c6',
+      proxy: url => {
+        console.log('url=============', url)
+        return `https://api.github.com?target=${url}`
+      }
     }],
     '@vuepress/back-to-top'
   ],
