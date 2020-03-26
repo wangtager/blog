@@ -33,8 +33,8 @@ module.exports = {
       // clientSecret: '73c0830a0dea90562d950d06846e87bd66393efa'
       // 本地
       clientId: '2e5c7372cce3eff6fdc7',
-      clientSecret: '743792ad67a4be3e975cfcfc201c60a04019ab95',
-      proxy: url => `https://api.github.com?target=${url}`
+      clientSecret: '743792ad67a4be3e975cfcfc201c60a04019ab95'
+      // proxy: url => `https://api.github.com?target=${url}`
       // proxy: url => {
       //   console.log('url=============', url)
       //   return `https://api.github.com?target=${url}`
