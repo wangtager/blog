@@ -40,6 +40,8 @@ setAnime(targets, width){
 ## 4.其它框架的使用
 后期根据是否有3d动画的需求使用three.js（或者D3.js）
 
+<Vssue title="animation" />
+
 
 
 

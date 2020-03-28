@@ -24,6 +24,7 @@ module.exports = {
     //   }
     // ],
     ['@vssue/vuepress-plugin-vssue', {
+      autoCreateIssue: true,
       // Accept: application/vnd.github.v3+json,
       locale: 'zh',
       platform: 'github',
@@ -34,7 +35,7 @@ module.exports = {
       // 本地
       clientId: '2e5c7372cce3eff6fdc7',
       clientSecret: '743792ad67a4be3e975cfcfc201c60a04019ab95'
-      // proxy: url => `https://api.github.com?target=${url}`
+      // proxy: url => `https://api.github.com?target=https://api.github.com`
       // proxy: url => {
       //   console.log('url=============', url)
       //   return `https://api.github.com?target=${url}`
