@@ -42,7 +42,7 @@ module.exports = {
     }],
     '@vuepress/back-to-top'
   ],
-  base: '/blog/',
+  // base: '/blog/',
   title: 'Tager Blog',
   content: 'HTML, CSS, XML, XHTML, JavaScript, Vue',
   description: '与其临渊羡鱼，不如退而结网',
