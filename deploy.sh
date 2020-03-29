@@ -5,7 +5,7 @@ set -e
 
 # 生成静态文件
 npm run docs:build
-# 根目录的文件备份到blog文件夹,是GitHub和gitee都能访问到；直接在npm run docs:build后执行
+# 根目录的文件备份到blog文件夹,使GitHub和gitee都能访问到；直接在npm run docs:build后执行
 # npm run gulp
 # 进入生成的文件夹
 cd docs/.vuepress/dist
