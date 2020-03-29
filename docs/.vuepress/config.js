@@ -1,28 +1,6 @@
 // let GithubV3=require('@vssue/api-github-v3')
 module.exports = {
   plugins: [
-  // '@vuepress/theme-blog',
-    // '@vssue/api-github-v3',
-    // [
-    //   '@vssue/vuepress-plugin-vssue',
-    //   {
-    //     locale: 'zh',
-    //     // 设置要使用的平台 api
-    //     // api: GithubV3,
-    //     // 设置 `platform` 而不是 `api`
-    //     platform: 'github',
-
-    //     // 其他的 Vssue 配置
-    //     owner: 'wangtager',
-    //     repo: 'blog',
-    //     // clientId: 'b3e5558b17c4a52f8d98',
-    //     // clientSecret: '73c0830a0dea90562d950d06846e87bd66393efa'
-    //     // 本地
-    //     clientId:'3e010a9999886c6c6e1c',
-    //     clientSecret:'9a64800d2be2cab9887bda67177cc2beebf1681c',
-    //     // Accept: 'application/vnd.github.v3+json'
-    //   }
-    // ],
     ['@vssue/vuepress-plugin-vssue', {
       autoCreateIssue: true,
       // Accept: application/vnd.github.v3+json,
@@ -30,16 +8,13 @@ module.exports = {
       platform: 'github',
       owner: 'wangtager',
       repo: 'blog',
-      // clientId: 'b3e5558b17c4a52f8d98',
-      // clientSecret: '73c0830a0dea90562d950d06846e87bd66393efa'
-      // 本地
-      clientId: '2e5c7372cce3eff6fdc7',
-      clientSecret: '743792ad67a4be3e975cfcfc201c60a04019ab95'
+      // github
+      // clientId: '2e5c7372cce3eff6fdc7',
+      // clientSecret: '743792ad67a4be3e975cfcfc201c60a04019ab95'
+      // gitee
+      clientId: 'fc59d37d93bbb87ba37d60a38f0e6993804e7fe2926a92e8ed4441e71aeac600',
+      clientSecret: 'd5dd71991ec7573c68a0745e46404624b26ed59fd18048bc996a7a1f0ecf7020'
       // proxy: url => `https://api.github.com?target=https://api.github.com`
-      // proxy: url => {
-      //   console.log('url=============', url)
-      //   return `https://api.github.com?target=${url}`
-      // }
     }],
     '@vuepress/back-to-top'
   ],
