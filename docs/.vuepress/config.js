@@ -5,20 +5,20 @@ module.exports = {
       autoCreateIssue: true,
       // Accept: application/vnd.github.v3+json,
       locale: 'zh',
-      platform: 'gitee',
-      owner: 'tagerwang',
+      platform: 'github',
+      owner: 'wangtager',
       repo: 'blog',
       // github
-      // clientId: '2e5c7372cce3eff6fdc7',
-      // clientSecret: '743792ad67a4be3e975cfcfc201c60a04019ab95'
+      clientId: '2e5c7372cce3eff6fdc7',
+      clientSecret: '743792ad67a4be3e975cfcfc201c60a04019ab95'
       // gitee
-      clientId: 'fc59d37d93bbb87ba37d60a38f0e6993804e7fe2926a92e8ed4441e71aeac600',
-      clientSecret: 'd5dd71991ec7573c68a0745e46404624b26ed59fd18048bc996a7a1f0ecf7020'
+      // clientId: 'fc59d37d93bbb87ba37d60a38f0e6993804e7fe2926a92e8ed4441e71aeac600',
+      // clientSecret: 'd5dd71991ec7573c68a0745e46404624b26ed59fd18048bc996a7a1f0ecf7020'
       // proxy: url => `https://api.github.com?target=https://api.github.com`
     }],
     '@vuepress/back-to-top'
   ],
-  base: '/blog/',
+  base: '/',
   title: 'Tager Blog',
   content: 'HTML, CSS, XML, XHTML, JavaScript, Vue',
   description: '与其临渊羡鱼，不如退而结网',
