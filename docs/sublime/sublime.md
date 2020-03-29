@@ -122,7 +122,7 @@ ctrl+ D 连续使用，增量选中同一个word
 
 tager
 ```
-<Vssue title="Sublime" />
+<Vssue title="Sublime" :issue-id="2"/>
 
 
 

@@ -33,4 +33,4 @@
 - `F11` 全屏模式
 - `Shift+F11` 免打扰模式
 
-<Vssue title="Sublime" />
+<Vssue :issue-id="1"/>
