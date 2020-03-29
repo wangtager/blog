@@ -5,8 +5,8 @@ module.exports = {
       autoCreateIssue: true,
       // Accept: application/vnd.github.v3+json,
       locale: 'zh',
-      platform: 'github',
-      owner: 'wangtager',
+      platform: 'gitee',
+      owner: 'tagerwang',
       repo: 'blog',
       // github
       // clientId: '2e5c7372cce3eff6fdc7',
@@ -18,7 +18,7 @@ module.exports = {
     }],
     '@vuepress/back-to-top'
   ],
-  // base: '/blog/',
+  base: '/blog/',
   title: 'Tager Blog',
   content: 'HTML, CSS, XML, XHTML, JavaScript, Vue',
   description: '与其临渊羡鱼，不如退而结网',

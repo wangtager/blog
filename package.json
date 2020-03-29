@@ -18,6 +18,7 @@
     "webpack": "^4.36.1"
   },
   "dependencies": {
+    "@vssue/api-gitee-v5": "^1.4.0",
     "@vssue/api-github-v3": "^1.4.0",
     "@vssue/vuepress-plugin-vssue": "^1.4.2",
     "@vuepress/theme-blog": "^2.2.0",
