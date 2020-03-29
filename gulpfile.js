@@ -6,11 +6,11 @@ function defaultTask(cb) {
     cb();
   }
 gulp.task('copy',function(){
-    return gulp.src('./docs/\.vuepress/dist/*').pipe(gulp.dest('./docs/\.vuepress/dist/blog/'));
+    return gulp.src(['./docs/\.vuepress/dist/**/*', '!./docs/\.vuepress/dist/blog/']).pipe(gulp.dest('./docs/\.vuepress/dist/blog/'));
 })
 gulp.task('clean', function (cb) {
     return del([
-      './docs/\.vuepress/dist/blog/*'
+      './docs/\.vuepress/dist/blog/'
     ], cb);
 });
 exports.default = defaultTask
