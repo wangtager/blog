@@ -1,5 +1,7 @@
 ---
 home: true
 heroImage: /home-page.jpg
-footer: MIT Licensed | Copyright © 2019 WangTao
 ---
+
+MIT Licensed | 版权所有Copyright © 2020 Tager.All Rights Reserved 备案号： [粤ICP备19049863号](http://www.beian.miit.gov.cn/)
+
