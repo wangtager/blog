@@ -52,7 +52,7 @@ module.exports = {
           { text: '高效编辑器', link: '/sublime/sublime' },
         ]
      },
-      { text: 'External', link: 'https://google.com' }
+      // { text: 'Gitte', link: 'https://gitee.com/tagerwang/blog' }
     ],
     displayAllHeaders: true,
     sidebar: [
