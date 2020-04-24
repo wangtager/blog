@@ -47,7 +47,7 @@ module.exports = {
         items: [
           { text: 'Javascript', link: '/javascript/debounce' },
           { text: 'NodeJs', link: '/nodejs/' },
-          { text: 'Graph', link: '/graph/svgCircleProgress' },
+          { text: 'Graph', link: '/graph/' },
           { text: '前端性能优化', link: '/performance/render' },
           { text: '高效编辑器', link: '/sublime/sublime' },
         ]
@@ -69,12 +69,14 @@ module.exports = {
       {
         title: 'NodeJs',
         children: [
-          '/nodejs/'
+          '/nodejs/',
+          '/nodejs/pm2'
         ]
       },
       {
         title: '图形动画',
         children: [
+        '/graph/',
           '/graph/svgCircleProgress',
           '/graph/animation'
         ]

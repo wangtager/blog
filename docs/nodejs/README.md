@@ -7,7 +7,10 @@
 
 添加配置国内源：`npm install -g cnpm --registry=https://registry.npm.taobao.org`
 
-[npx](http://www.ruanyifeng.com/blog/2019/02/npx.html) 想要解决的主要问题，就是调用项目内部安装的模块
+[npx](http://www.ruanyifeng.com/blog/2019/02/npx.html) 
+想要解决的主要问题，就是调用项目内部安装的模块
+
+Node自动重启工具 [nodemon](https://www.jianshu.com/p/3b3b8bf9c4e9) [npm地址](https://www.npmjs.com/package/nodemon)
 
 nrm 管理和快速切换npm源地址
 
@@ -53,6 +56,8 @@ Npm常用命令整理:
 > `npm login`
 
 > `npm publish --access=public // access 指定修饰符。`
+> 
+> npm root -g // 查看全局的包的安装路径
 
 <div style="display: none;">
     <a href="https://www.cnblogs.com/dotnetcrazy/p/10118756.html" target="_blank"></a>
