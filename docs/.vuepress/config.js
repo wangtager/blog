@@ -47,6 +47,7 @@ module.exports = {
         items: [
           { text: 'Javascript', link: '/javascript/debounce' },
           { text: 'NodeJs', link: '/nodejs/' },
+          { text: 'backend', link: '/backend/httpStatus' },
           { text: 'Graph', link: '/graph/' },
           { text: '前端性能优化', link: '/performance/render' },
           { text: '高效编辑器', link: '/sublime/sublime' },
@@ -61,7 +62,6 @@ module.exports = {
         title: 'Javascript',
         children: [
           '/javascript/debounce',  /* /foo/one.html */
-          '/javascript/httpCache',   /* /foo/two.html */
           '/javascript/constructorFunction',
           '/javascript/decorator'
         ]
@@ -71,6 +71,13 @@ module.exports = {
         children: [
           '/nodejs/',
           '/nodejs/pm2'
+        ]
+      },
+      {
+        title: '常用的后端知识',
+        children: [
+          '/backend/httpStatus',
+          '/backend/httpCache',
         ]
       },
       {
