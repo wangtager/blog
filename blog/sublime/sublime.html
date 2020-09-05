@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sublime 插件和配置文件的版本控制 | Tager Blog</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/blog/logo.jpg">
+    <meta name="description" content="与其临渊羡鱼，不如退而结网">
+    <link rel="preload" href="/blog/assets/css/0.styles.15ee3217.css" as="style"><link rel="preload" href="/blog/assets/js/app.639cd58a.js" as="script"><link rel="preload" href="/blog/assets/js/2.625d0afc.js" as="script"><link rel="preload" href="/blog/assets/js/27.d607893a.js" as="script"><link rel="preload" href="/blog/assets/js/5.ec6cd246.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.ad34d0e2.js"><link rel="prefetch" href="/blog/assets/js/11.86b62e11.js"><link rel="prefetch" href="/blog/assets/js/12.11d0964a.js"><link rel="prefetch" href="/blog/assets/js/13.be2e4cc4.js"><link rel="prefetch" href="/blog/assets/js/14.a5f108e2.js"><link rel="prefetch" href="/blog/assets/js/15.fe435834.js"><link rel="prefetch" href="/blog/assets/js/16.5ae83134.js"><link rel="prefetch" href="/blog/assets/js/17.44ade0e2.js"><link rel="prefetch" href="/blog/assets/js/18.95cb9ad3.js"><link rel="prefetch" href="/blog/assets/js/19.6b6f4cbc.js"><link rel="prefetch" href="/blog/assets/js/20.7f54f489.js"><link rel="prefetch" href="/blog/assets/js/21.62ecc5d0.js"><link rel="prefetch" href="/blog/assets/js/22.aa507bd1.js"><link rel="prefetch" href="/blog/assets/js/23.95fca3a7.js"><link rel="prefetch" href="/blog/assets/js/24.6b5446d8.js"><link rel="prefetch" href="/blog/assets/js/25.5031aa6c.js"><link rel="prefetch" href="/blog/assets/js/26.a0daed16.js"><link rel="prefetch" href="/blog/assets/js/3.5d8fd5d2.js"><link rel="prefetch" href="/blog/assets/js/4.3bde02cb.js"><link rel="prefetch" href="/blog/assets/js/6.3996e9ad.js"><link rel="prefetch" href="/blog/assets/js/7.1d1ccad0.js"><link rel="prefetch" href="/blog/assets/js/8.e5ff8b58.js"><link rel="prefetch" href="/blog/assets/js/9.2417f7ac.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.15ee3217.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Tager Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端栈" class="dropdown-title"><span class="title">前端栈</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端栈" class="mobile-dropdown-title"><span class="title">前端栈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/javascript/debounce.html" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/nodejs/" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/blog/backend/httpStatus.html" class="nav-link">
+  backend
+</a></li><li class="dropdown-item"><!----> <a href="/blog/graph/" class="nav-link">
+  Graph
+</a></li><li class="dropdown-item"><!----> <a href="/blog/performance/render.html" class="nav-link">
+  前端性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/sublime/sublime.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  高效编辑器
+</a></li></ul></div></div> <a href="https://github.com/wangtager/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端栈" class="dropdown-title"><span class="title">前端栈</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端栈" class="mobile-dropdown-title"><span class="title">前端栈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/javascript/debounce.html" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/nodejs/" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/blog/backend/httpStatus.html" class="nav-link">
+  backend
+</a></li><li class="dropdown-item"><!----> <a href="/blog/graph/" class="nav-link">
+  Graph
+</a></li><li class="dropdown-item"><!----> <a href="/blog/performance/render.html" class="nav-link">
+  前端性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/sublime/sublime.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  高效编辑器
+</a></li></ul></div></div> <a href="https://github.com/wangtager/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>NodeJs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常用的后端知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>图形动画</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端性能优化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>高效编辑器</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/sublime/sublime.html" aria-current="page" class="active sidebar-link">Sublime 插件和配置文件的版本控制</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/sublime/keyBinding.html" class="sidebar-link">sublime 高效的快捷键使用</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="sublime-插件和配置文件的版本控制"><a href="#sublime-插件和配置文件的版本控制" class="header-anchor">#</a> Sublime 插件和配置文件的版本控制</h3> <div class="pv_count">浏览量：<span></span></div> <p>使用 <a href="https://packagecontrol.io/installation" target="_blank" rel="noopener noreferrer">Package
+Control<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，所有安装的包在 <a href="https://github.com/wangtager/sublime-config/blob/master/Package%20Control.sublime-settings" target="_blank" rel="noopener noreferrer">Package
+Control.sublime-settings 文件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+中都列出了。</p> <h3 id="使用步骤"><a href="#使用步骤" class="header-anchor">#</a> 使用步骤</h3> <p>首先在新系统上 sublime 3/2 安装好之后</p> <div class="language-console line-numbers-mode"><pre class="language-text"><code>
+  1. 找到sublime插件目录
+  打开sumlime, 选择菜单栏-首选项-浏览插件目录，然后在目录下打开User文件夹
+  (mac系统下的插件地址是~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/)
+  (windows下的插件地址是C:\Users\pp\AppData\Roaming\Sublime Text 3\Packages\User)
+
+  2. cd 到插件的地址
+
+  3. git clone https://github.com/wangtager/sublime-config.git
+
+  4. 把sublime 插件和配置都存放在自己的git仓库，像操作其它项目一样对配置进行版本控制。
+
+  ** 一次配置，终生有效。再也不用担心换电脑，重新一个一个的安装插件和配置了 **
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>到 https://packagecontrol.io/installation 安装 packagecontrol 。这样所有的包会自动安装上。（ ctrl 跟 导引号 来呼叫出 command console ）</li> <li>如果已经安装了packagecontrol， 打开命令栏<code>Ctrl+Shift+P</code>, 在命令栏输入<code>pi</code>, 选择<code>Package Control: Install Package</code> 安装即可。</li></ul> <h3 id="插件说明"><a href="#插件说明" class="header-anchor">#</a> 插件说明</h3> <ol><li>ChineseLocalization
+语言包功能，切换各国语言</li> <li>Ctags
+函数跳转，我的电脑上是Alt+点击 函数名称，会跳转到相应的函数</li> <li>git
+git 版本控制</li> <li>Vue Syntax Highlight
+Vue语法高亮</li> <li>Vuejs Snippets</li> <li>AdvancedNewFile
+快速创建文件</li> <li>Emmet(同时自动安装PyV8库）
+一种快速编写html/css的方法</li> <li>pug</li> <li>Sass</li> <li>SyncedSideBar</li> <li>AutoFileName
+功能：快捷输入文件名(按Tab键或鼠标点击选中)</li> <li>Nodejs
+功能：node代码提示</li> <li>Open Folder
+功能：在任何文件任何位置右击快速打开所在的文件夹</li></ol> <h3 id="问题处理"><a href="#问题处理" class="header-anchor">#</a> 问题处理</h3> <blockquote><ol><li>输入pci时 提示There are no packages available for installation，导致无法安装任何插件？</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>原因： Package Control的远程文件无法获取
+  &quot;channels&quot;: [
+    &quot;https://packagecontrol.io/channel_v3.json&quot;
+  ]
+
+  处理: 在Package Control.sublime-settings文件中更换远程地址为
+    &quot;channels&quot;: [
+    &quot;https://wangtager.github.io/sublime-config/channel_v3.json&quot;
+  ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><blockquote><ol start="2"><li>sublime 怎样按elint自动格式化文件？</li></ol></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>选择 工具-编译系统-新建编译系统
+输入：
+{
+  // &quot;shell_cmd&quot;: &quot;eslint --fix $file&quot;
+  &quot;shell_cmd&quot;: &quot;npx eslint --fix --ext js,vue $file&quot;
+}
+保存并命名
+选择 工具-编译系统-选择自己刚命名的模板
+文件有修改后，ctrl+b 即可按elint自动格式化当前文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>可配合 <a href="https://packagecontrol.io/packages/SublimeLinter-eslint" target="_blank" rel="noopener noreferrer">SublimeLinter-eslint<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 插件，在文件中高亮eslint的错误</p> <p>这个问题全网都没有找到答案，这种情况只有摸索才能出真知</p> <ol start="3"><li>SublimeCodeIntel插件安装过程中出现的问题以及解决方案
+原因：<a href="https://blog.csdn.net/BuluGuy/article/details/100056412" target="_blank" rel="noopener noreferrer">参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ol> <p>处理: <a href="https://blog.csdn.net/nalaluky/article/details/80864386" target="_blank" rel="noopener noreferrer">参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <blockquote><p>注意：安装SublimeCodeIntel前需要安装CodeIntel</p></blockquote> <p>安装方法查看官网<a href="https://packagecontrol.io/packages/SublimeCodeIntel" target="_blank" rel="noopener noreferrer">说明 CodeIntel Installation<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a><a href="https://zhuanlan.zhihu.com/p/38603105" target="_blank" rel="noopener noreferrer">知乎pip<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a><a href="https://www.python.org/downloads/release/python-382/" target="_blank" rel="noopener noreferrer">python最新版下载地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://www.jianshu.com/p/bc1263f12c4f" target="_blank" rel="noopener noreferrer">python安装失败原因分析<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>（未指定错误0x80072efd）</p> <p>由于网络问题，python和pip很难下载，可直接<a href="https://pan.baidu.com/s/1ju8YvUBYSgzSjD0ikDKfYw" target="_blank" rel="noopener noreferrer">下载<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>提取码：ke48</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>安装成功测试`python -m pip --version`
+运行安装CodeIntel：
+pip3 install --upgrade --pre CodeIntel 
+
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+运行python -m pip install --upgrade pip , 消除错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="快速导航"><a href="#快速导航" class="header-anchor">#</a> 快速导航</h3> <p><a href="http://www.sublimetext.cn/" target="_blank" rel="noopener noreferrer">受欢迎的特性<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a><a href="https://www.sublimetext.com/support" target="_blank" rel="noopener noreferrer">英文版<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="插件统计"><a href="#插件统计" class="header-anchor">#</a> 插件统计</h3> <p>在<a href="https://packagecontrol.io/" target="_blank" rel="noopener noreferrer">Popular<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>中总有你喜欢的存在</p> <h3 id="快捷键-continue-add"><a href="#快捷键-continue-add" class="header-anchor">#</a> 快捷键（continue add）</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>alt + f3 选中同一个word(把光标放到你要选中变量的右边或者左边，记住不要选中这个变量)
+ctrl+ D 连续使用，增量选中同一个word
+
+tager
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><!----></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/wangtager/blog/edit/master/docs/sublime/sublime.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/21/2020, 7:41:07 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/performance/render.html" class="prev">
+        两句css 搞定页面滚动时的卡顿问题
+      </a></span> <span class="next"><a href="/blog/sublime/keyBinding.html">
+        sublime 高效的快捷键使用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.639cd58a.js" defer></script><script src="/blog/assets/js/2.625d0afc.js" defer></script><script src="/blog/assets/js/27.d607893a.js" defer></script><script src="/blog/assets/js/5.ec6cd246.js" defer></script>
+  </body>
+</html>

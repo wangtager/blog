@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Decorator 装饰器 | Tager Blog</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/blog/logo.jpg">
+    <meta name="description" content="与其临渊羡鱼，不如退而结网">
+    <link rel="preload" href="/blog/assets/css/0.styles.15ee3217.css" as="style"><link rel="preload" href="/blog/assets/js/app.639cd58a.js" as="script"><link rel="preload" href="/blog/assets/js/2.625d0afc.js" as="script"><link rel="preload" href="/blog/assets/js/20.7f54f489.js" as="script"><link rel="preload" href="/blog/assets/js/5.ec6cd246.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.ad34d0e2.js"><link rel="prefetch" href="/blog/assets/js/11.86b62e11.js"><link rel="prefetch" href="/blog/assets/js/12.11d0964a.js"><link rel="prefetch" href="/blog/assets/js/13.be2e4cc4.js"><link rel="prefetch" href="/blog/assets/js/14.a5f108e2.js"><link rel="prefetch" href="/blog/assets/js/15.fe435834.js"><link rel="prefetch" href="/blog/assets/js/16.5ae83134.js"><link rel="prefetch" href="/blog/assets/js/17.44ade0e2.js"><link rel="prefetch" href="/blog/assets/js/18.95cb9ad3.js"><link rel="prefetch" href="/blog/assets/js/19.6b6f4cbc.js"><link rel="prefetch" href="/blog/assets/js/21.62ecc5d0.js"><link rel="prefetch" href="/blog/assets/js/22.aa507bd1.js"><link rel="prefetch" href="/blog/assets/js/23.95fca3a7.js"><link rel="prefetch" href="/blog/assets/js/24.6b5446d8.js"><link rel="prefetch" href="/blog/assets/js/25.5031aa6c.js"><link rel="prefetch" href="/blog/assets/js/26.a0daed16.js"><link rel="prefetch" href="/blog/assets/js/27.d607893a.js"><link rel="prefetch" href="/blog/assets/js/3.5d8fd5d2.js"><link rel="prefetch" href="/blog/assets/js/4.3bde02cb.js"><link rel="prefetch" href="/blog/assets/js/6.3996e9ad.js"><link rel="prefetch" href="/blog/assets/js/7.1d1ccad0.js"><link rel="prefetch" href="/blog/assets/js/8.e5ff8b58.js"><link rel="prefetch" href="/blog/assets/js/9.2417f7ac.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.15ee3217.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Tager Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端栈" class="dropdown-title"><span class="title">前端栈</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端栈" class="mobile-dropdown-title"><span class="title">前端栈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/javascript/debounce.html" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/nodejs/" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/blog/backend/httpStatus.html" class="nav-link">
+  backend
+</a></li><li class="dropdown-item"><!----> <a href="/blog/graph/" class="nav-link">
+  Graph
+</a></li><li class="dropdown-item"><!----> <a href="/blog/performance/render.html" class="nav-link">
+  前端性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/sublime/sublime.html" class="nav-link">
+  高效编辑器
+</a></li></ul></div></div> <a href="https://github.com/wangtager/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端栈" class="dropdown-title"><span class="title">前端栈</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端栈" class="mobile-dropdown-title"><span class="title">前端栈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/javascript/debounce.html" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/nodejs/" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/blog/backend/httpStatus.html" class="nav-link">
+  backend
+</a></li><li class="dropdown-item"><!----> <a href="/blog/graph/" class="nav-link">
+  Graph
+</a></li><li class="dropdown-item"><!----> <a href="/blog/performance/render.html" class="nav-link">
+  前端性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/sublime/sublime.html" class="nav-link">
+  高效编辑器
+</a></li></ul></div></div> <a href="https://github.com/wangtager/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Javascript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/javascript/debounce.html" class="sidebar-link">防抖和节流的区分和实现详解</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/javascript/debounce.html#常见的应用场景" class="sidebar-link">常见的应用场景</a></li><li class="sidebar-sub-header"><a href="/blog/javascript/debounce.html#防抖-debounce" class="sidebar-link">防抖(debounce)</a></li><li class="sidebar-sub-header"><a href="/blog/javascript/debounce.html#节流-throttle" class="sidebar-link">节流(throttle)</a></li><li class="sidebar-sub-header"><a href="/blog/javascript/debounce.html#区别" class="sidebar-link">区别</a></li></ul></li><li><a href="/blog/javascript/constructorFunction.html" class="sidebar-link">JS构造函数及new运算符</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/javascript/constructorFunction.html#先探讨构造函数的几个问题" class="sidebar-link">先探讨构造函数的几个问题：</a></li></ul></li><li><a href="/blog/javascript/decorator.html" aria-current="page" class="active sidebar-link">Decorator 装饰器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/javascript/decorator.html#decorator装饰器的使用及实例" class="sidebar-link">Decorator装饰器的使用及实例</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>NodeJs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常用的后端知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>图形动画</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端性能优化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>高效编辑器</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="decorator-装饰器"><a href="#decorator-装饰器" class="header-anchor">#</a> Decorator 装饰器</h1> <div class="pv_count">浏览量：<span></span></div> <p><strong><code>什么是装饰器?</code></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>装饰器是一种函数，目的是用来修改类及其成员。
+Javascript装饰器还处于草案中，目前没有直接支持该语法的环境，但Babel 已支持其语法转换。
+在TypeScript里也已做为一项实验性特性予以支持。
+在Angular中也进行了大量使用，有很多内置的装饰器。
+实际上就是设计模式中常说的装饰者模式的一种实现
+
+装饰者模式，是指在不必改变原类文件或使用继承的情况下，动态地扩展一个对象的功能，
+为对象增加额外特性的一种设计模式。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong><code>为什么要用装饰器</code></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>装饰器有方便、高效、语义化更强的特性。
+合理利用装饰器可以极大的提高开发效率、可以封装提炼非内部函数的逻辑代码、
+可以帮助我们快速完成重复性的工作。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="decorator装饰器的使用及实例"><a href="#decorator装饰器的使用及实例" class="header-anchor">#</a> Decorator装饰器的使用及实例</h2> <blockquote><p>case 1： 修饰类 基础用法</p></blockquote> <p>给类添加装饰器，自动把类作为第一个参数，传递给装饰器。</p> <blockquote><p>case 2： 修饰类 并自定义参数</p></blockquote> <p>如果你觉得一个参数不够用，可以在装饰器函数的外层再封装一层函数。不只是装饰器，在<code>Vue</code>中利用闭包的特性，还可以向<code>computed和getter</code>等方法中传递指定的参数。</p> <p>装饰器在装饰类的属性时，会智能的去装饰该原型，其</p> <ul><li>第一参数为要装饰的目标元素，</li> <li>第二个参数为属性名，</li> <li>第三参数为该属性的描述对象</li></ul> <p>装饰器对类的行为的改变，是在代码编译时发生的，而不是在运行时。</p> <blockquote><p>case3 多个装饰器嵌套的应用</p></blockquote> <p>如果多个装饰器有传参会按顺序执行所有装饰器的外部函数。执行完毕后再用reduce倒序递归执行得到的内部装饰器函数。</p> <blockquote><p>case4 实现类的多继承</p></blockquote> <p>在js中class没有直接的语法可以实现多重继承，如果要实现多继承，只能使用mixin的方式或用getOwnPropertyNames遍历等间接的手段。如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class C extends A, B {}        // Error
+class C extends A extends B {} // Error
+Mixin 方法实现
+class A{}
+function Mixin ( BaseClass ) {
+	return class extends BaseClass
+	{
+		mixin(){ console.log('这是混合继承的类的方法，继承生成新的表达式类') }
+	}
+}
+class C extends Mixin(A){}
+new C().mixin() // 这是混合继承的类的方法，继承生成新的表达式类
+
+// getOwnPropertyNames 方式实现
+class C extend B {} 
+for (let key of Object.getOwnPropertyNames(A.prototype)) {
+ if (key === 'constructor') continue 
+Object.defineProperty(C.prototype, key, Object.getOwnPropertyDescriptor(A.prototype, key)) 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>但有了装饰器，开发人员无需关注上面的具体实现，
+可通过@Decorator，能够帮你省去很多繁琐的步骤来用上装饰器</p> <blockquote><p>case5 其他常用的简易装饰器</p></blockquote> <ol><li><strong>@readonly 装饰器</strong></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>使属性只读
+class Person{
+@readonly // 使该属性只读。
+age() {
+}
+}
+function readonly(target, name, descriptor){
+    // descriptor对象原来的值如下
+  // {
+  //   value: specifiedFunction,
+  //   enumerable: false,
+  //   configurable: true,
+  //   writable: true
+  // };
+  descriptor.writable = false;
+  return descriptor;
+}
+readonly(Person.prototype, 'name', descriptor)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><ol start="2"><li><strong>@getExcuteTime 装饰器，</strong></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>获取某个函数执行开始时间到结束的时间
+以往需要这样
+class Person{
+something1(){
+let start = Date.now()
+// do something...
+let end = Date.now()
+console.log('执行时间：',end-start)
+}
+something2(){
+let start = Date.now()
+// do something...
+let end = Date.now()
+console.log('执行时间：',end-start)
+}
+}
+使用装饰器,使计时和业务分离
+class Person{
+@getExcuteTime
+something1(){
+// do something...
+}
+@getExcuteTime
+something2(){
+// do something...
+}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><ol start="3"><li><strong>@log 装饰器</strong></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>我们不希望日志和业务掺和在一起，这样使用修饰器就避免了这个问题
+class Person{
+@log('开始第一步')
+step1() {
+// do something...
+// 无需在函数中写打印的逻辑
+}
+@log('开始第二步')
+step2() {
+// do something...
+}
+}
+
+function log(value) {
+    return function (target, name, descriptor) {
+        // 可以在这里根据参数打印更加详细的信息
+        console.log(value)
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>还有像登陆(不要重复写一些是否登陆的逻辑)、aixos等装饰器，需要我们自身根据具体需求去实现。</p> <blockquote><p>其它</p></blockquote> <p>vue项目中使用装饰器，其官方提供的组件<a href="https://github.com/vuejs/vue-class-component" target="_blank" rel="noopener noreferrer">装饰器<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>core-decorators.js 提供了一些<a href="https://github.com/jayphelps/core-decorators" target="_blank" rel="noopener noreferrer">常用的装饰器方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <!----></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/wangtager/blog/edit/master/docs/javascript/decorator.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/21/2020, 7:41:07 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/javascript/constructorFunction.html" class="prev">
+        JS构造函数及new运算符
+      </a></span> <span class="next"><a href="/blog/nodejs/">
+        NodeJs
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.639cd58a.js" defer></script><script src="/blog/assets/js/2.625d0afc.js" defer></script><script src="/blog/assets/js/20.7f54f489.js" defer></script><script src="/blog/assets/js/5.ec6cd246.js" defer></script>
+  </body>
+</html>
